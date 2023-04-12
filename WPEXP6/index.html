@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paint.css">
+    <title>CanBank Login</title>
+</head>
+<body onload="pmt()">
+    <div class="container">
+        <div class="leftpane">
+            <h2 id="title" onmouseover="message()">Welcome to Canara Bank ;)</h2>
+        </div>
+        <div class="rightpane" id="right">
+            <form action="confirm.html" id="myform" onreset="meme()">
+                <br>
+                <h3>Account Number</h3><input type="tel" name="acc" id="acc" placeholder="Enter your Account Number" onblur="vanish()"> <br> 
+                <marquee id="magic" direction="right" scrollamount="20" ></marquee>
+                <!-- <h6 id="err1"></h6> -->
+                <br><br>
+
+                <h3>Account Type</h3>
+                <select name="type" id="type" onclick="money()" >
+                    <option value="Savings">Savings</option>
+                    <option value="Current">Current</option>
+                    <option value="Deposit">Deposit</option>
+                </select>
+                <br>
+                <br><br>
+                <h3>Password</h3><input ondblclick="money()" type="password" name="pwd1" id="pwd1" placeholder="Enter your Password"> <br>                <h6 id="err2"></h6><br>
+
+                <h3>Confirm Password</h3><input type="password" onchange="expose()" name="pwd2" id="pwd2" placeholder="Re-Enter your Password" required> <br>                <h6 id="err3"></h6><br>
+
+                <h3>Email</h3><input type="email" name="email" id="email" placeholder="Enter your E-mail"> <br>                <h6 id="err4"></h6><br><br>
+
+                <input type="submit" value="Login" >
+                <input type="reset" value="Reset" id="reset"> 
+
+
+
+            </form>
+        </div>
+        <marquee id="memer" onmousedown="this.stop();" onmouseup="this.start();" direction="right" scrollamount="30"><img src="Disappointed-Pakistan-Fan.jpg" alt="watta" id="i1" style="visibility: hidden;">
+        </marquee>
+    </div>
+
+</body>
+<script src="function.js"></script>
+</html>
